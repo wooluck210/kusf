@@ -82,6 +82,7 @@ while cur_page_num <= target_crawl_num:
         if v.select('td'):
             for i in range(1, 15):
                 con = v.select('td:nth-child(%s)' % i)[0].text
+                print(con)
                 worksheet1.write(row, col, con)
                 col += 1
             row += 1
