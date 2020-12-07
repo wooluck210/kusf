@@ -1,0 +1,61 @@
+Main	0	MOV	AX	50
+	1	MOV	BX	51
+	2	ADD	AX	BX
+	3	PUSH	AX	
+	4	MOV	AX	52
+	5	MOV	BX	53
+	6	ADD	AX	BX
+	7	PUSH	AX	
+	8	POP	BX	
+	9	POP	AX	
+	10	MUL	AX	BX
+	11	MOV	54	AX
+	12	PRINT	54	
+	13	CALL	20	
+	14	PRINT	56	
+	15	HALT		
+	16			
+	17			
+	18			
+	19			
+funE1	20	MOV	AX	50
+	21	MOV	BX	51
+	22	CALL	35	
+	23	MOV	55	AX
+	24	MOV	AX	52
+	25	MOV	BX	53
+	26	CALL	35	
+	27	MOV	BX	55
+	28	CALL	40	
+	29	MOV	56	AX
+	30	RETURN		
+	31			
+	32			
+	33			
+	34			
+funE2	35	ADD	AX	BX
+	36	RETURN		
+	37			
+	38			
+	39			
+funE3	40	MUL	AX	BX
+	41	RETURN		
+	42			
+	43			
+	44			
+	45			
+	46			
+	47			
+	48			
+	49			
+DATA	50	5		
+	51	7		
+	52	10		
+	53	6		
+	54			
+	55			
+	56			
+	57			
+	58			
+	59			
+	60			
